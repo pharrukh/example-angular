@@ -1,0 +1,7 @@
+<p>This is a binding component!</p>
+<label>User name:</label>
+<input type="text" class="form-control" [(ngModel)]="username" />
+<p>{{ username }}</p>
+<button class="btn btn-primary" [disabled]="!username" (click)="username = ''">
+  Add user
+</button>
